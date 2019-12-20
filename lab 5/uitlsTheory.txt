@@ -1,0 +1,58 @@
+﻿1.Socket programming is a way of connecting two nodes on a network to communicate with each other.
+2.BeginConnect(String, Int32, AsyncCallback, Object)
+Begins an asynchronous request for a remote host connection. The host is specified by a host name and a port number.
+3.
+requestCallback
+AsyncCallback
+An AsyncCallback delegate that references the method to invoke when the connect operation is complete
+--
+4.
+A user-defined object that contains information about the connect operation.
+This object is passed to the requestCallback delegate when the operation is complete.
+---
+5.End connect Ends a pending asynchronous connection request.
+---
+6.BeginSend Sends data asynchronously to a connected Socket.
+AsyncCallback Delegate -	References a method to be called when a corresponding asynchronous operation completes.
+---
+7.EndsEND s a pending asynchronous send.
+--
+8.Dns. DNS servers resolve host names to IP addresses. With the System.Net namespace in the .NET Framework, we easily perform this task.
+-----------------
+Represents a thread synchronization event that, when signaled, must be reset manually. This class cannot be inherited.
+
+Set -Sets the state of the event to signaled, allowing one or more waiting threads to proceed.
+WaitOne -Blocks the current thread until the current WaitHandle receives a signal.
+----
+Task - 
+.NET framework provides Threading.Tasks class to let you create tasks and run them asynchronously. 
+A task is an object that represents some work that should be done. The task can tell you if the work is completed and if 
+the operation returns a result, 
+the task gives you the result.
+---------------------------
+Difference between Tasks and Thread:
+The Thread class is used for creating and manipulating a thread in Windows. A Task represents some asynchronous operation and is part of the Task Parallel Library, a set of APIs for running tasks asynchronously and in parallel.
+The task can return a result. There is no direct mechanism to return the result from a thread.
+Task supports cancellation through the use of cancellation tokens. But Thread doesn't.
+A task can have multiple processes happening at the same time. Threads can only have one task running at a time.
+We can easily implement Asynchronous using ’async’ and ‘await’ keywords.
+A new Thread()is not dealing with Thread pool thread, whereas Task does use thread pool thread.
+A Task is a higher level concept than Thread.
+-----------------------------------------------
+TaskFactory- Provides support for creating and scheduling Task objects.
+Task.Wait - Waits for the Task to complete execution.
+------
+await and async--
+When you use the await keyword in a method, it is suspended and the control is given back to the caller of your async method,
+until the work in the awaited method is done. 
+In a Console Application, the Main thread would finish its work so the program will exit.
+Task.WaitAll is blocking, while using await will make the containing method async. To wait for multiple tasks asynchronously you can use Task.WhenAll:
+
+C# 5 introduced the async and await keywords which are very useful for making calls to asynchronous methods without breaking the linear flow of the program.
+Note here that await is not blocking the current thread and the do something with res part is only executed when GetIntAsync is finished.
+
+The await keyword basically instructs the C# compiler to:
+
+take all statements after await
+package them into a lambda
+generate code that schedules the lambda for us

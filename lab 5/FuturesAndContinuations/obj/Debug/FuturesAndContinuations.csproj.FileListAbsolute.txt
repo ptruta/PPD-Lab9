@@ -1,0 +1,7 @@
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\obj\Debug\FuturesAndContinuations.csprojAssemblyReference.cache
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\obj\Debug\FuturesAndContinuations.csproj.CoreCompileInputs.cache
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\bin\Debug\FuturesAndContinuations.exe.config
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\bin\Debug\FuturesAndContinuations.exe
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\bin\Debug\FuturesAndContinuations.pdb
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\obj\Debug\FuturesAndContinuations.exe
+D:\An 3\Sem 1\PPD\lab 5\FuturesAndContinuations\obj\Debug\FuturesAndContinuations.pdb
