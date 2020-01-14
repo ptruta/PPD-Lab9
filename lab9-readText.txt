@@ -1,0 +1,17 @@
+A MPI application can be launched via the mpirun command.The MPI application is launched on several specified nodes(hosts) and in a specified number of instances on each node.
+Each instance starts the execution from the main() function and has the same command - line arguments(specified in the mpirun command).Each instance can retrieve(via MPI_Comm_size() and MPI_Comm_rank()) the number of instances launched(in the same mpirun command) and the own ID.
+
+
+An MPI program must call MPI_Init() in the beginning and MPI_Finalize() in the end.
+Finding out the number of launched instances is done via MPI_Comm_size(), with MPI_COMM_WORLD as the identifier. Finding out one's own ID is done via MPI_Comm_rank().
+Basic communication operations consist in sending and receiving an array of elements of the same type (array of integers, array of doubles, etc).
+There are two kinds of communications:
+buffered communication, where the sender puts the data in a buffer and continues execution. If the receiver comes after the sender, then it takes the data from the buffer; if it comes before the sender, it has to wait for the sender. 
+Synchronous communication, where the sender waits for the receiver to be ready. Whichever of the processes (the sender of the receiver) comes first, it is blocked until the other gets to the communication operation. Then, the communication is done and each process continues execution. 
+
+The receive operation is MPI_Recv(). The send operations are: MPI_Ssend() (synchronous), MPI_Bsend() (buffered) and MPI_Send() (unspecified, implementation-defined).
+See the example mpi1.cpp, where a first process sends a number to a second one, the second adds 1 and sends the result to the third one, and so on, until the last process adds 1 and prints the result.
+Other operations include:
+Broadcast — MPI_Bcast() - see example bcast-mpi.cpp 
+Launching a send or receive without waiting — MPI_Isend() and MPI_Irecv(). These calls return immediately; to actually wait for the completion of the operation, call MPI_Wait() or MPI_Waitany. 
+Scatter-gather: MPI_Scatter(), MPI_Gather(), MPI_Allgather()

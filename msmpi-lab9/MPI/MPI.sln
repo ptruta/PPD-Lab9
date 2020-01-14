@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPI", "MPI\MPI.vcxproj", "{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCC7C1C1-1237-4F38-ABBE-47D1FAABB93F}"
+	ProjectSection(SolutionItems) = preProject
+		MPI\MPI.cpp = MPI\MPI.cpp
+		MPI\stdafx.h = MPI\stdafx.h
+		MPI\targetver.h = MPI\targetver.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Debug|x64.ActiveCfg = Debug|x64
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Debug|x64.Build.0 = Debug|x64
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Debug|x86.Build.0 = Debug|Win32
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Release|x64.ActiveCfg = Release|x64
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Release|x64.Build.0 = Release|x64
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Release|x86.ActiveCfg = Release|Win32
+		{0B4CD5BD-01F3-4F78-B452-FC790BBC9DA0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4F787B0-8465-49A6-920E-11E7E6E86CA8}
+	EndGlobalSection
+EndGlobal
